@@ -9,28 +9,31 @@ class palavra{
   }
 
   render() {
+
+    var a;
+    typeof a;				// "undefined"
+
+    a = "hello world";
+    typeof a;				// "string"
+
+    a = 42;
+    typeof a;				// "number"
+
+    a = true;
+    typeof a;				// "boolean"
+
+    a = null;
+    typeof a;				// "object" -- weird, bug
+
+    a = undefined;
+    typeof a;				// "undefined"
+
+    a = { b: "c" };
+    typeof a;				// "object"
+
     return (
 
-      var a;
-      typeof a;				// "undefined"
-
-      a = "hello world";
-      typeof a;				// "string"
-
-      a = 42;
-      typeof a;				// "number"
-
-      a = true;
-      typeof a;				// "boolean"
-
-      a = null;
-      typeof a;				// "object" -- weird, bug
-
-      a = undefined;
-      typeof a;				// "undefined"
-
-      a = { b: "c" };
-      typeof a;				// "object"
+    
 
       <div>
         <Hello name={this.palavra.name} />
